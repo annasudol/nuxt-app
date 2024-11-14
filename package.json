@@ -1,7 +1,11 @@
 {
-  "name": "nuxt-fullstack-mongo",
+  "name": "nuxtfullstackmongo",
   "private": true,
   "type": "module",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
