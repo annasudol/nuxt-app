@@ -80,40 +80,16 @@ function onError(error: H3Error) {
     <Body>
       <NuxtLoadingIndicator />
 
-      <UHeader>
-        <template #logo>
-          <Logo class="mt-2 w-64 h-20" />
-        </template>
-        <template #panel-button>
-          <span />
-        </template>
-        <template #right>
-          <Socials />
-          <UDropdown v-if="loggedIn" :items="items" mode="hover">
-            <UAvatar :src="`https://unavatar.io/gravatar/${user.email}`" class="bg-gray-200 dark:bg-neutral-800" />
+<div>
 
-            <template #account>
-              <div class="text-left w-full">
-                <p>
-                  Signed in as
-                </p>
-                <p class="truncate font-medium">
-                  {{ user.email }}
-                </p>
-              </div>
-            </template>
-          </UDropdown>
-          <UButton v-else color="gray" @click="modal = true">
+  <UButton color="gray" @click="modal = true">
             Login
           </UButton>
-        </template>
-      </UHeader>
 
-      <UMain>
-        <UContainer>
+
           <NuxtPage />
-        </UContainer>
-      </UMain>
+</div>
+ 
 
       <UFooter :ui="{ wrapper: 'border-t border-gray-400/20' }">
         <template #left>
